@@ -5,17 +5,18 @@ import 'package:flutter/material.dart';
 class AppThemes {
   static final lightTheme = ThemeData(
     brightness: Brightness.light,
-    backgroundColor: AppColors.whiteColor,
+    // backgroundColor: AppColors.whiteColor,
     primaryColor: AppColors.primeryColor,
     scaffoldBackgroundColor: AppColors.whiteColor,
-    textTheme: const TextTheme(
-        bodyText1: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 50,
-            color: AppColors.blueColor),
-        bodyText2: TextStyle(color: Colors.black87),
-        headline6: TextStyle(color: Colors.black, fontSize: 20),
-        subtitle1: TextStyle(color: Colors.black)),
+    // textTheme: const TextTheme(
+    //     bodyLarge: TextStyle(
+    //         fontWeight: FontWeight.bold,
+    //         fontSize: 50,
+    //         color: AppColors.blueColor),
+    //     bodyMedium: TextStyle(color: Colors.black87),
+    //     // headline6: TextStyle(color: Colors.black, fontSize: 20),
+    //     // subtitle1: TextStyle(color: Colors.black)
+    //     ),
     buttonTheme: const ButtonThemeData(
         buttonColor: AppColors.primeryColor,
         textTheme: ButtonTextTheme.primary),
@@ -25,18 +26,19 @@ class AppThemes {
         titleTextStyle: AppTextStyle.nunito12w400),
   );
   static final darkTheme = ThemeData(
-    backgroundColor: AppColors.backgroundColor,
+    scaffoldBackgroundColor: AppColors.backgroundColor,
     brightness: Brightness.dark,
     primaryColor:
         AppColors.primeryColor, // Define your primary color in AppColors
-    scaffoldBackgroundColor: Colors.black,
+    // scaffoldBackgroundColor: Colors.black,
     primaryColorLight: Colors.white,
-    textTheme: TextTheme(
-        bodyText1: TextStyle(
-            fontWeight: FontWeight.bold, fontSize: 50, color: Colors.white),
-        bodyText2: TextStyle(color: Colors.white70),
-        headline6: TextStyle(color: Colors.white, fontSize: 20),
-        subtitle1: TextStyle(color: Colors.white)),
+    // textTheme: TextTheme(
+    //     bodyLarge: TextStyle(
+    //         fontWeight: FontWeight.bold, fontSize: 50, color: Colors.white),
+    //     bodyMedium: TextStyle(color: Colors.white70),
+    //     // headline6: TextStyle(color: Colors.white, fontSize: 20),
+    //     // subtitle1: TextStyle(color: Colors.white)
+    //     ),
     buttonTheme: const ButtonThemeData(
       buttonColor: Colors.white,
       textTheme: ButtonTextTheme.primary,

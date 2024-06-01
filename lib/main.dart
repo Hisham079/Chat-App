@@ -1,9 +1,10 @@
 import 'package:chaty/module/auth/login_view.dart';
 import 'package:chaty/utils/themes/app_themes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 final ValueNotifier<ThemeMode> themeNotifier = ValueNotifier(ThemeMode.light);
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
             theme: AppThemes.lightTheme,
             darkTheme: AppThemes.darkTheme,
             themeMode: value,
-            home: const LoginView());
+            home:  LoginView());
       },
     );
   }
